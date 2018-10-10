@@ -1,0 +1,21 @@
+.schedule {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#toopic {
+    background-color: red;
+}
+
+#topic {
+    background-color: blue;
+    color: white;
+}
+
+#goals {
+    background-color: green;
+}
+
+.font {
+    background-color: red;
+}
