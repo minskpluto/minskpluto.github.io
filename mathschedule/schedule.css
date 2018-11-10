@@ -1,6 +1,8 @@
 .schedule {
     font-weight: bold;
     font-size: 50px;
+    margin: 30px;
+    padding: 10px;
 }
 
 #toopic {
