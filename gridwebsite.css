@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display:grid;
+    height: 100%;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 80px 1fr 100px;
+}
+
+.header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #7a96f9;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:gold;
+    display:flex;
+    flex-direction: column;
+}
+.sidebar div {
+    /* border: 1px solid black; */
+    padding: 10px 20px;
+    text-align: center;
+    transition: all 0.3s;
+
+}
+
+.sidebar div:hover {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(https://cdn.guidingtech.com/imager/media/assets/191091/Best-HD-Wallpapers-From-the-Marvel-Universe-5_4d470f76dc99e18ad75087b1b8410ea9.jpg?1524147630)
+}
+.footer {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: aquamarine;   
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
