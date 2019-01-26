@@ -6,8 +6,8 @@ function createQuestion(){
     var randomInteger1 = Math.ceil(Math.random()*9); //0-9.
     var randomInteger2 = Math.ceil(Math.random()*9);
     var newQuestion = randomInteger1
-    newQuestion = `${randomInteger1} + ${randomInteger2} =`;
-    answer = randomInteger1 + randomInteger2;
+    newQuestion = `${randomInteger1} × ${randomInteger2} =`;
+    answer = randomInteger1 * randomInteger2;
 
     questionElement. innerHTML = newQuestion;
 }
@@ -29,7 +29,7 @@ function handleEnterKey() {
             //if correct, generates new question
             createQuestion();
         } else {
-            alert(`You are fucking stupid!!!`);
+            alert(`You are stupid!!!`);
         }
     }
 }
