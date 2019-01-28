@@ -107,6 +107,14 @@ function handleEqualBtnClick() {
     // g stands for global
     expression = expression.replace(/×/g, "*");
     expression = expression.replace(/÷/g, "/");
+
+    try{
+        var result = eval(expression);
+        resultElement.innerHTML = result;
+        evaluated = true;
+    } catch(error) {
+        alert('Maths Error');
+    }
     resultElement.innerHTML = eval(expression);
     evaluated = true;
 }
