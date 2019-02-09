@@ -113,8 +113,7 @@ function handleEqualBtnClick() {
         resultElement.innerHTML = result;
         evaluated = true;
     } catch(error) {
-        alert('Maths Error');
-    }
-    resultElement.innerHTML = eval(expression);
+    resultElement.innerHTML = 'Maths Error';
     evaluated = true;
+    }
 }
